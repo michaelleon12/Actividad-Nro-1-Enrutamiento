@@ -1,0 +1,385 @@
+{
+  "info": {
+    "_postman_id": "556a147c-2481-4135-b620-c95b72c7d653",
+    "name": "Actividad rutas",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "6635515"
+  },
+  "item": [
+    {
+      "name": "personal",
+      "item": [
+        {
+          "name": "Agregar personal",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Ana Gonzalez\",\n  \"puesto\": \"Gerente\",\n  \"solicitante\": true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:5000/api/personal",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "personal"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "personal",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "solicitantes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:5000/api/personal",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "personal"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "solicitantes",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Ana Gonzalez\",\n  \"puesto\": \"Gerente\",\n  \"solicitante\": true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:5000/api/personal",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "personal"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "equipos",
+      "item": [
+        {
+          "name": "Equipos",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:5000/api/equipos/",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "equipos", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:5000/api/equipos/5",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "equipos", "5"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create equipo",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "eliminar equipo",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:5000/api/equipos/1",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "equipos", "1"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "actualizar equipo",
+          "request": {
+            "method": "PUT",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "espacios",
+      "item": [
+        {
+          "name": "espacios",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:5000/api/equipos",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "equipos"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get id",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "create espacio",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "POST http://localhost:3000/espacios\n\n{\n  \"espacio\": \"Sala de juntas\",\n  \"fecha\": \"2023-03-10\",\n  \"horaInicio\": \"09:00\",\n  \"horaFin\": \"11:00\",\n  \"solicitante\": \"Juan Perez\"\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:5000/api/espacios",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "espacios"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "eliminar espacio",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:5000/api/espacios",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "espacios"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar espacio",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "\n{\n  \"espacio\": \"Sala de juntas 22\",\n  \"fecha\": \"2023-03-11\",\n  \"horaInicio\": \"10:00\",\n  \"horaFin\": \"11:00\",\n  \"solicitante\": \"Juan Perez\"\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:5000/api/espacios/2",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "espacios", "2"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "reserva-espacio",
+      "item": [
+        {
+          "name": "Get reserva espacio",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:5000/api/reserva-espacios",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "reserva-espacios"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crea reserva",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"espacio\": \"Sala de juntas\",\n    \"fecha\": \"2023-03-11\",\n    \"horaInicio\": \"09:00\",\n    \"horaFin\": \"11:00\",\n    \"solicitante\": \"Juan Perez\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:5000/api/reservas-espacios",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "reservas-espacios"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get reserva por dia",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:5000/api/reservas-espacios",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "reservas-espacios"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get reserva por fecha",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:5000/api/reservas-espacios",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "reservas-espacios"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "reserva-equipos",
+      "item": [
+        {
+          "name": "reserva-equipo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:5000/api/reservas-equipos",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "reservas-equipos"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear reserva equipo",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"equipo\": \"Sala de juntas\",\n    \"fecha\": \"2023-03-15\",\n    \"horaInicio\": \"09:00\",\n    \"horaFin\": \"11:00\",\n    \"solicitante\": \"Juan Perez\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:5000/api/reservas-equipos",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "reservas-equipos"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get reserva equipo dia",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:5000/api/reservas-equipos/2023-03-14",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "reservas-equipos", "2023-03-14"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get reserva fecha",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:5000/api/reservas-equipos/2023-03-14/2023-03-16",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "reservas-equipos", "2023-03-14", "2023-03-16"]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
